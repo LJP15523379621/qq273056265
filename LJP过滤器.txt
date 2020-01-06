@@ -1,0 +1,22 @@
+! Title:LJP过滤器
+! Description:作者为:LJP，qq群838713983
+! Version:无
+! Homepage:到时候再搞
+
+#拦截uc域名服务器，使uc能被ad路由
+#uc代理服务器，数据中转
+||vs2.bjct.u3.ucweb.com^
+#uc的dns服务器
+||track.uc.cn^
+
+#黑名单，广告，弹窗
+||landeng8.org^
+#拦截无法跳出和返回
+#https://llq.1234aqllq.cn/safe/liulanqi/js/201910.html?2241578124023&pkg=25#
+||llq.1234aqllq.cn^$document
+
+#净化好孩子网站
+#https://fwzzl.com/retu
+||xiazai2.huoguobaisui.com^$document
+#http://m.19gif.com/fanhao
+/zhonglian-cn.com/$document
